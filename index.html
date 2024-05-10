@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A library management system for book, journal, and CD issuance.">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>l
+    <main>
+        <section>
+            <h2>Menu Items</h2>
+            <div class="menu-item">
+                <img src="logo.jpg" alt="Book">
+                <h3>AIIHE </h3>
+                <p> Book, 2nd Edition</p>
+            </div>
+            <div class="menu-item">
+                <img src="logo.jpg" alt="Journal">
+                <h3>AIIHE </h3>
+                <p> Journal, Volume 3</p>
+            </div>
+            <div class="menu-item">
+                <img src="logo.jpg" alt="CD">
+                <h3>AIIHE </h3>
+                <p> CD, 2023 Edition</p>
+            </div>
+        </section>
+        <section>
+            <h2>Item Issue Form</h2>
+            <form id="issueForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="item">Item:</label>
+                <select id="item" name="item" required>
+                    <option value="">Select an item</option>
+                    <option value="book">Book</option>
+                    <option value="journal">Journal</option>
+                    <option value="cd">CD</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <label for="requests">Special Requests:</label>
+                <textarea id="requests" name="requests"></textarea>
+				<label for="dateInput">Return Date:</label>
+				<input type="date" id="dateInput">
+                <button type="submit">Issue Item</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
